@@ -1,0 +1,19 @@
+
+
+import UIKit
+
+var myScore:UInt = 0
+var myGrade:String = ""
+
+myScore = 75
+
+if myScore>=0 && myScore<50 {myGrade = "F"} else
+if myScore>=50 && myScore<60 {myGrade = "D"}else
+if myScore>=60 && myScore<70{myGrade = "C"} else
+if myScore>=70 && myScore<80 {myGrade = "B"} else
+if myScore>=80 && myScore<=100{myGrade = "A"}
+
+
+print("your score is " + String(myScore))
+print("Your grade is " + myGrade)
+if myScore<50 {print("YOU FAIL THIS COURSE")} else {print("YOU PASS THIS COURSE")}
